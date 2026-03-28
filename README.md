@@ -21,18 +21,18 @@ Users can upload images or videos, and the app will detect whether people are we
 ## 📁 Project Structure
 
 helmet-detection/
-├── app.py          # Main Flask application
-├── model.py        # YOLO detection functions
-├── best.pt         # YOLO trained model
-├── requirements.txt# Python dependencies
+├── app.py          
+├── model.py        
+├── best.pt         
+├── requirements.txt
 ├── templates/
-│   └── index.html  # Frontend UI
+│   └── index.html  
 ├── static/
-│   └── uploads/    # Temporary storage for uploaded files
+│   └── uploads/    
 
 ## Quick Install
 
-1. Clone repo and enter folder: `git clone <repo-url> && cd helmet-detection`  
+1. Clone repo and enter folder: `git clone https://github.com/rafay-datascientistAI/6-Real-Time-Helmet-Detection-API.git`  
 2. Create virtual environment and activate: `python -m venv venv && source venv/bin/activate` (Windows: `.\venv\Scripts\activate`)  
 3. Install dependencies: `pip install -r requirements.txt`  
 4. Run app: `python app.py` and open `http://127.0.0.1:5000` in browser
