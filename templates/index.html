@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helmet Detection</title>
+</head>
+<body>
+    <h1>Upload Image for Helmet Detection</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Detect</button>
+    </form>
+
+{% if result %}
+    <h2>Result: {{ result }}</h2>
+
+    {% if filetype == "image" %}
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" width="400">
+    {% elif filetype == "video" %}
+        <video width="400" controls>
+            <source src="{{ url_for('static', filename='uploads/' + filename) }}" type="video/mp4">
+        </video>
+    {% endif %}
+{% endif %}
+</body>
+</html>
