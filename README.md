@@ -25,7 +25,7 @@ helmet-detection/
 ├── model.py      
 ├── best.pt      
 ├── requirements.txt      
-├── templates/
+├── templates/      
 │   └── index.html      
 ├── static/      
 │   └── uploads/    
