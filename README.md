@@ -21,12 +21,12 @@ Users can upload images or videos, and the app will detect whether people are we
 ## 📁 Project Structure
 
 helmet-detection/
-├── app.py          
-├── model.py        
-├── best.pt         
+├── app.py
+├── model.py
+├── best.pt
 ├── requirements.txt
 ├── templates/
-│   └── index.html  
+│   └── index.html
 ├── static/
 │   └── uploads/    
 
